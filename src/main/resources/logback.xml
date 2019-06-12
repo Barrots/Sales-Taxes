@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+	<appender name="LOG-EXERCISE-PROJECT" class="ch.qos.logback.core.rolling.RollingFileAppender">
+		<file>logs/taxes.log</file>
+		<encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+			<Pattern>
+				%d{yyyy-MM-dd HH:mm:ss} %-5level %class{36}.%M %L - %msg%n
+			</Pattern>
+		</encoder>
+	</appender>
+	<appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+		<layout class="ch.qos.logback.classic.PatternLayout">
+			<Pattern>
+				%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} - %msg%n
+			</Pattern>
+		</layout>
+	</appender>
+	<logger name="com.exercise" level="DEBUG" additivity="false">
+		<appender-ref ref="LOG-EXERCISE-PROJECT" />
+		<appender-ref ref="STDOUT" />
+	</logger>
+	<logger name="org.apache" level="INFO">
+		<appender-ref ref="STDOUT" />
+	</logger>
+</configuration>
