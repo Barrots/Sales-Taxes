@@ -12,3 +12,8 @@ When I purchase items I receive a receipt which lists the name of all the items 
 paid. The rounding rules for sales tax are that for a tax rate of n%, a shelf price of p contains
 (np/100 rounded up to the nearest 0.05) amount of sales tax.
 
+###Generated Output:
+For the sake of testing and showing the generated outputs I decided to print the results in Standard Output knowing that in a normal project that should not happen.
+
+
+####Feel free to start the Receipt Generation in the StarterApplicationTest
