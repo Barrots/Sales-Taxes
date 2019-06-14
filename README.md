@@ -1,4 +1,4 @@
-# Sales Taxes Exercise
+# Sales Taxes Exercise [![Build Status](https://travis-ci.org/Barrots/Sales-Taxes.svg?branch=master)](https://travis-ci.org/Barrots/Sales-Taxes) [![codecov](https://codecov.io/gh/Barrots/Sales-Taxes/branch/master/graph/badge.svg)](https://codecov.io/gh/Barrots/Sales-Taxes/branch/master) 
 
 This application prints out the receipt details for shopping baskets based on the goods inside and the tax rules previously decided.
 
@@ -11,3 +11,4 @@ When I purchase items I receive a receipt which lists the name of all the items 
 (including tax), finishing with the total cost of the items, and the total amounts of sales taxes
 paid. The rounding rules for sales tax are that for a tax rate of n%, a shelf price of p contains
 (np/100 rounded up to the nearest 0.05) amount of sales tax.
+
